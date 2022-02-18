@@ -1,2 +1,2 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_caja_taller_caja_taller,caja_taller.caja_taller,model_caja_taller_caja_taller,base.group_user,1,1,1,1
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+tesoreria,Tesorero,model_caja_taller,group_orden_servicio,1,1,1,1

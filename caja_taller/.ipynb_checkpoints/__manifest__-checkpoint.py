@@ -3,14 +3,13 @@
     'name': "caja_taller",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Caja menor para administracion de un punto taller""",
 
     'description': """
-        Long description of module's purpose
+        Este modulo cuenta con orden de servicio, la cual especifica los servicios que ser prestan
     """,
 
-    'author': "My Company",
+    'author': "Sebastian moreno",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -25,7 +24,8 @@
 
     # always loaded
     'data': [
-        #'security/ir.model.access.csv',
+        'security/orden_servicio_security.xml',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],

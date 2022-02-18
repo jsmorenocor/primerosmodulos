@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_orden_servicio" model="res.groups">
+        <field name="name"> Tesoreria / Admin </field>
+    </record>
+    <record id="only_active_modify" model="ir.rule">
+        <field name="name"> Usuarios activos </field>
+        <field name="perm_read"> 
+        <field name="perm_write">
+        <field name="perm_create">
+        <field name="perm_unlink"> 
+        <field name="domain_force">[('active','=',True)]    
+    </record>
+</odoo>
