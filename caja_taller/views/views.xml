@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="caja_taller.list">
+      <field name="name">caja_taller list</field>
+      <field name="model">caja_taller.caja_taller</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="caja_taller.action_window">
+      <field name="name">caja_taller window</field>
+      <field name="res_model">caja_taller.caja_taller</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="caja_taller.action_server">
+      <field name="name">caja_taller server</field>
+      <field name="model_id" ref="model_caja_taller_caja_taller"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="caja_taller" id="caja_taller.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="caja_taller.menu_1" parent="caja_taller.menu_root"/>
+    <menuitem name="Menu 2" id="caja_taller.menu_2" parent="caja_taller.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="caja_taller.menu_1_list" parent="caja_taller.menu_1"
+              action="caja_taller.action_window"/>
+    <menuitem name="Server to list" id="caja_taller" parent="caja_taller.menu_2"
+              action="caja_taller.action_server"/>
+-->
+  </data>
+</odoo>
