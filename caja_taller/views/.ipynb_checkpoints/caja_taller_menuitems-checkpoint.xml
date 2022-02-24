@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="caja_taller_action">
+            <field name="name">Ordenes de Sevicio</field>
+            <field name="res_model">caja_taller</field>
+            <field name="view_mode">tree,form</field>
+            
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                   Crea la primera orden
+                </p>
+            </field> 
+        </record>
+        
+        <menuitem name="Caja Taller"
+                  id="menu_taller"
+                  web_icon="caja_taller,static/description/icon.png"
+                  sequence="1"/>
+        <menuitem name="Orden Servicio"
+                  id="menu_taller_sub"
+                  parent="menu_taller"
+                  sequence="2"/>
+        <menuitem name="ordenes de servicio"
+                  id="menu_caja_taller"
+                  parent="menu_taller_sub"
+                  sequence="3"
+                  action="caja_taller_action"/>
+    </data>
+</odoo>

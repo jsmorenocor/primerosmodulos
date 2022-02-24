@@ -26,6 +26,7 @@
     'data': [
         'security/orden_servicio_security.xml',
         'security/ir.model.access.csv',
+        'views/caja_taller_menuitems.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
