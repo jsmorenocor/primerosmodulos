@@ -1,23 +1,54 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-
-<!-- 
-    <record model="ir.ui.view" id="caja_taller.list">
-      <field name="name">caja_taller list</field>
-      <field name="model">caja_taller.caja_taller</field>
+    <record model="ir.ui.view" id="caja_taller.form">
+      <field name="name">caja_taller.form</field>
+      <field name="model">caja_taller</field>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+        <form string="taller form">
+            <sheet>
+                <h1><field name="name"/></h1>
+                <group>
+                    <group>
+                        <field name="value" />
+                    </group> 
+                    <group>
+                        <field name="value2"/>
+                    </group>  
+                </group>
+                <notebook>
+                    <page  string ="Descrition"/>
+                        <field name ="description"/>
+                </notebook>    
+            </sheet>    
+        </form>  
       </field>
-    </record>
+     </record>
+      
+     <record model="ir.ui.view" id="caja_taller.list"> 
+         <field name="name">caja_taller.list</field>
+         <field name="model">caja_taller</field>
+         <field name="arch" type="xml">
+             <tree>
+              <field name="name"/>
+              <field name="value"/>
+              <field name="value2"/>
+             </tree>
+      </field>
+     </record>
+      
+     <record model="ir.ui.view" id="caja_taller.search"> 
+         <field name="name">caja_taller.search</field>
+         <field name="model">caja_taller</field>
+         <field name="arch" type="xml">
+             <search>
+              <field name="name"/>
+              <field name="value"/>
+             </search>
+      </field>
+     </record> 
 
--->
 <!-- actions opening views on models -->
-
+<!--
     <record model="ir.actions.act_window" id="caja_taller.action_window">
       <field name="name">caja_taller window</field>
       <field name="res_model">caja_taller</field>
@@ -28,7 +59,7 @@
            </p>
        </field>   
     </record>
-
+-->
 
     <!-- server action to the one above -->
 <!--
@@ -47,12 +78,14 @@
 -->
 
     <!-- Top menu item -->
-
+<!--      
     <menuitem name="caja_taller" id="menu_caja_taller" sequence="1"/>
    
-    <!-- menu categories -->
+     menu categories
      <menuitem name="caja_taller" id="menu_caja_taller_sub" parent="menu_caja_taller" sequence="2"/>
      <menuitem name="orden servicio" id="menu_orden_servicio_sub" parent="menu_caja_taller" sequence="3"/>
+
+ -->
 
     <!-- actions -->
 <!--
